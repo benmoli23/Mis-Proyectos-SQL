@@ -54,4 +54,4 @@ UNION ALL
 SELECT '---', 'TOTAL CAJA', '---', SUM(total_cobrado) FROM ventas;
 
 -- 6. RESULTADO FINAL
-SELECT * FROM reporte_bachino;
+SELECT * FROM SQL-Retail-Management;
