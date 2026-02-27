@@ -1,4 +1,4 @@
--- 1. LIMPIEZA TOTAL CON CASCADE (Esto rompe cualquier dependencia)
+LIMPIEZA TOTAL CON CASCADE (Esto rompe cualquier dependencia)
 DROP TABLE IF EXISTS ventas CASCADE;
 DROP TABLE IF EXISTS productos CASCADE;
 
@@ -41,7 +41,7 @@ INSERT INTO ventas (ticket_nro, id_producto, cantidad, total_cobrado) VALUES
 (12, 11, 2, 220.00), (13, 5, 2, 280.00), (14, 6, 4, 380.00), (15, 4, 5, 645.00);
 
 -- 5. RE-CREAR LA VISTA (Para que vuelva a existir después del CASCADE)
-CREATE OR REPLACE VIEW reporte_bachino AS
+CREATE OR REPLACE VIEW SQL_Retail_Management AS
 (SELECT 
     v.ticket_nro::TEXT AS "Nro Ticket", 
     p.nombre AS "Descripción", 
@@ -54,4 +54,4 @@ UNION ALL
 SELECT '---', 'TOTAL CAJA', '---', SUM(total_cobrado) FROM ventas;
 
 -- 6. RESULTADO FINAL
-SELECT * FROM SQL-Retail-Management;
+SELECT * FROM SQL_Retail_Management;
