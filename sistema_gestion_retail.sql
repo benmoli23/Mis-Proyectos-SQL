@@ -1,4 +1,3 @@
-LIMPIEZA TOTAL CON CASCADE (Esto rompe cualquier dependencia)
 DROP TABLE IF EXISTS ventas CASCADE;
 DROP TABLE IF EXISTS productos CASCADE;
 
